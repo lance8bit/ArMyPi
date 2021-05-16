@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview_cont"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginLeft="6dp"
+    app:cardCornerRadius="8dp">
+    <LinearLayout
+        android:id="@+id/backgroundNotify"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingLeft="4dp"
+        android:orientation="horizontal"
+        android:background="#FB8181">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:background="#fff">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/textNotify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Motion detected"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/dateNotify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Date: 08/01/19 12:14:12"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

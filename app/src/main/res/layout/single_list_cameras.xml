@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardContainerCamera"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginLeft="6dp"
+    app:cardCornerRadius="8dp"
+    android:backgroundTint="#C1E9FB"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="4dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".75"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/cameraIcon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_camera_sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cameraNameEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Camera Name"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:paddingBottom="4dp"/>
+            <TextView
+                android:id="@+id/alarmStatusEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="alarmStatus"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".55"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/statusColor"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:cardCornerRadius="50dp">
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
